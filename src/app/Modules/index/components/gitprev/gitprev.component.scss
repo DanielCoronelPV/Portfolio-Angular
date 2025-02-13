@@ -35,7 +35,7 @@
 .bio{
     font-weight: 400;
     font-size: 17px ;
-    color: var(--text1);
+    color: #D9E5D6;
     margin-bottom: 10px;
 }
 
@@ -52,7 +52,7 @@
 
 .followers{
     font-size: 16px;
-    color:  var(--gitText2);
+    color:  #D9E5D6;
     font-weight: 300;
 
     .number{
@@ -62,12 +62,12 @@
 
 .extras{
     font-size: 16px;
-    color: var(--text1);
+    color: #D9E5D6;
     margin: 0;
     font-weight: 300;
 
     i{
-        color: var(--gitText2);  
+        color: var(--gitText2);
     }
 }
 
@@ -80,17 +80,19 @@
     color: rgba(255, 255, 255, 0.832);
     transition: color 0.1s ease-in-out;
   }
-  
+
   .logoGit:hover {
     color: white;
   }
-  
+
 
 
 
 h1 {
-    font-size: 2rem;
-    margin: 10px 0;
+  font-size: 2em;
+  font-weight: 900;
+  font-style: italic;
+  margin: 10px 0;
 }
 
 p {

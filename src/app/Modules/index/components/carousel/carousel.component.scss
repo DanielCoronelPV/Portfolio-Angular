@@ -1,8 +1,8 @@
   /*
   SCSS de: Componente Carousel
 
-  @Autor: Pablo López Luján
-          github.com/pablolop12
+  @Autor: Daniel Coronel
+          github.com/DanielCoronelPV
   */
 
 
@@ -10,7 +10,6 @@
   .carousel-container {
       display: flex;
       align-items: center;
-
   }
 
   /* Div base donde se proyectan los demás div del carousel */
@@ -18,13 +17,13 @@
       width: 435px;
       height: 435px;
       background-color: var(--background);
-      box-shadow: 12px 16px 20px -1px var(--background);
+      box-shadow: 12px 16px 20px -1px #537988;
       z-index: 1;
       display: flex;
       justify-content: center;
       align-items: center;
       transition: transform 0.3s ease-in-out;
-
+    border-radius: 10px;
   }
 
   /* Menú vertical de iconos */
@@ -42,7 +41,7 @@
   /* Estilo para POSICIONAMIENTO de los iconos del Menú */
   .menu div {
       cursor: pointer;
-      margin-bottom: 5px;
+      padding-bottom: 5px;
       position: relative;
       display: flex;
       align-items: center;
@@ -56,7 +55,7 @@
       top: -5px;
       width: 28px;
       height: 28px;
-      background-color: var(--discoverBtnActive2);
+      background-color: #14A76C;
       border-radius: 10px;
       z-index: 3;
   }

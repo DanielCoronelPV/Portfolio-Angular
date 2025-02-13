@@ -9,6 +9,8 @@ import { Component, AfterViewInit } from '@angular/core';
 })
 export class ProfileComponent implements AfterViewInit {
 
+  isMenuCollapsed: boolean = true;  // Variable para controlar el estado del menú
+
   ngAfterViewInit(): void {
     const typingElement = document.querySelector('.typing') as HTMLElement;
     const text = '¡Hola! soy...';
@@ -49,7 +51,7 @@ export class ProfileComponent implements AfterViewInit {
     const copyEmailBtn = document.getElementById('copyEmailBtn');
     if (copyEmailBtn) {
       copyEmailBtn.addEventListener('click', () => {
-        const email = 'pablolopezlujan01@gmail.com';
+        const email = 'danicoronel201070@gmail.com';
         navigator.clipboard.writeText(email).then(() => {
           const tooltip = new bootstrap.Tooltip(copyEmailBtn, {
             title: '¡Copiado!',
@@ -66,4 +68,23 @@ export class ProfileComponent implements AfterViewInit {
       });
     }
   }
+
+  scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      // Calcula la posición del desplazamiento con un offset
+      const offset = 80; // Ajusta este valor para establecer el espacio extra deseado
+      const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
+
+      // Desplazamiento suave con offset
+      window.scrollTo({
+        top: sectionPosition,
+        behavior: 'smooth'
+      });
+
+      // Cierra el menú en pantallas pequeñas después de hacer clic
+      this.isMenuCollapsed = true;
+    }
+  }
+
 }

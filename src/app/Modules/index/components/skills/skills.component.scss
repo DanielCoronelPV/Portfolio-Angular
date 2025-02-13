@@ -1,19 +1,19 @@
   /*
   SCSS de: Componente Skills
 
-  @Autor: Pablo López Luján
-          github.com/pablolop12
+  @Autor: Daniel Coronel
+          github.com/DanielCoronelPV
   */
 
 
   /* Estilos para el texto */
   h1{
     font-weight: 800;
-    color: var(--text1);
+    color: #D9E5D6;
   }
 
   p{
-    color: var(--text2);
+    color: #D9E5D6;
     font-size: 1.125rem;
     line-height: 1.5;
     letter-spacing: -0.017em;
@@ -21,13 +21,16 @@
   }
 
   span{
-    color: var(--accent);
+    color: #e1a831;
     font-weight: 600;
   }
 
   .introTitle{
     color: var(--pretext);
-
   }
 
-
+  h1 {
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+  }

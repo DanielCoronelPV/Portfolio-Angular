@@ -6,9 +6,8 @@
 //BACKGROUND
 .background {
   position: relative;
-  background-color: var(--background);
+  background-color: #071013;
   overflow: hidden;
-
 }
 
 .background:before,
@@ -42,7 +41,7 @@
   top: 45vh;
   left: -35vh;
   margin: auto;
-  background-color:var(--cir1) ;
+  background-color: var(--cir1) ;
   z-index: 0;
 }
 

@@ -8,7 +8,7 @@ import { ThemeService } from '../../../../services/theme.service';
 })
 export class NavbarComponent implements OnInit {
   currentSection: string = '';
-  isDarkTheme: boolean = true; // Por defecto, el tema oscuro (luna) está activado
+  // isDarkTheme: boolean = true; // Por defecto, el tema oscuro (luna) está activado
   isMenuCollapsed: boolean = true;  // Variable para controlar el estado del menú
 
   constructor(private themeService: ThemeService) {}
@@ -35,15 +35,13 @@ export class NavbarComponent implements OnInit {
 
   @HostListener('window:resize', [])
   onWindowResize(): void {
- 
+
   }
 
-
-
-  toggleTheme() {
-    this.themeService.toggleTheme();
-    this.isDarkTheme = !this.isDarkTheme;
-  }
+  // toggleTheme() {
+  //   this.themeService.toggleTheme();
+  //   this.isDarkTheme = !this.isDarkTheme;
+  // }
 
   // Método para alternar el estado del menú
   toggleMenu() {
@@ -64,18 +62,18 @@ export class NavbarComponent implements OnInit {
       // Calcula la posición del desplazamiento con un offset
       const offset = 80; // Ajusta este valor para establecer el espacio extra deseado
       const sectionPosition = section.getBoundingClientRect().top + window.scrollY - offset;
-  
+
       // Desplazamiento suave con offset
       window.scrollTo({
         top: sectionPosition,
         behavior: 'smooth'
       });
-  
+
       // Cierra el menú en pantallas pequeñas después de hacer clic
       this.isMenuCollapsed = true;
     }
   }
-  
 
-  
+
+
 }

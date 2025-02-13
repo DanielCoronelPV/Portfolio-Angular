@@ -6,16 +6,16 @@ import { GitprevService } from '../../../../services/gitprev.service';
   templateUrl: './gitprev.component.html',
   styleUrl: './gitprev.component.scss'
 })
-export class GitprevComponent implements OnInit {
-  profile: any;
+export class GitprevComponent {
+  // profile: any;
 
-  constructor(private gitprevService: GitprevService) {}
+  // constructor(private gitprevService: GitprevService) {}
 
-  ngOnInit(): void {
-    this.gitprevService.getProfile().subscribe(data => {
-      this.profile = data;
-    });
-  }
+  // ngOnInit(): void {
+  //   this.gitprevService.getProfile().subscribe(data => {
+  //     this.profile = data;
+  //   });
+  // }
 
 
 }

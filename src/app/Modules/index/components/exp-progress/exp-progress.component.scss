@@ -1,7 +1,7 @@
   /*
   SCSS de: Componente Exp-Progress
-  @Autor: Pablo López Luján
-          github.com/pablolop12
+  @Autor: Daniel Coronel
+          github.com/DanielCoronelPV
   */
 
   /* Contenedor base del componente */
@@ -11,6 +11,17 @@
     margin: 0 auto;
     padding: 20px 0;
     list-style-type: none;
+  }
+
+  p.color {
+    color: #D9E5D6 !important;
+  }
+
+  .title {
+    color: #D9E5D6;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
   }
 
   /* Estructura de un item del timeline */
@@ -55,6 +66,7 @@
     position: relative;
     flex: 1;
     margin-right: 20px;
+    color: #D9E5D6 !important;
   }
 
   .timeline-description {
@@ -68,7 +80,7 @@
 
   .role {
     font-size: 22px;
-    color: var(--accent);
+    color: #e1a831 !important;
     font-weight: 500;
   }
 
@@ -78,7 +90,7 @@
 
 
   .highlight {
-    color: var(--accent);
+    color: #e1a831 !important;
     font-weight: 600;
   }
 
@@ -87,73 +99,3 @@
     margin-left: 4px;
     color: var(--external);
   }
-
-.timeline-item {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Asegura que las bolas estén alineadas con el contenido */
-  margin-bottom: 20px;
-  margin-left: 50px;
-}
-
-.timeline-marker {
-  position: absolute;
-  top: 50%;
-  left: -30px;
-  flex-shrink: 0;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background-color: var(--text1);
-  margin-right: 20px;
-  margin-top: 5px; /* Ajusta este margen según sea necesario para alinear con el título */
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 25px; /* Ajusta la posición de la línea central */
-  bottom: 0;
-  width: 1.5px;
-  background: linear-gradient(180deg, var(--tl1) 0%, var(--tl2) 4%, var(--tl2) 96%, var(--tl1) 100%);
-  z-index: -1;
-}
-
-.timeline-details {
-  position: relative;
-  flex: 1;
-  margin-right: 20px;
-}
-
-.timeline-description {
-  flex: 2;
-}
-
-.company {
-  margin: 0;
-  font-weight: 600;
-}
-
-.role {
-  font-size: 22px;
-  color: var(--accent);
-  font-weight: 500;
-}
-
-.date {
-  color: var(--date);
-}
-
-
-.highlight{
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.external{
-  font-size: 16px;
-  margin-left: 4px;
-  color: var(--external);
-}

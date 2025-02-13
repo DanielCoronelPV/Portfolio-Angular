@@ -1,7 +1,7 @@
   /*
   SCSS de: Componente Polygon Skills
-  @Autor: Pablo López Luján
-          github.com/pablolop12
+  @Autor: Daniel Coronel
+          github.com/DanielCoronelPV
   */
 
   /* Contenedor base del componente */
@@ -113,6 +113,13 @@
     width: 100%;
   }
 
+  .size-ionic {
+    height: 55px !important;
+  }
+
+  .size-dbeaver {
+    height: 85px !important;
+  }
 
   @keyframes float {
 

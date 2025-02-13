@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-md fixed-top navbar-scroll">
+<nav class="navbar navbar-expand-md style-nav navbar-scroll fixed-top">
   <div class="container-fluid container">
     <!-- LOGO -->
-    <a class="navbar-brand me-5" href="#top">
-      <img src="../../../../../assets/image.webp" height="40px" alt="Logo de la pagina">
+    <a title="Daniel Coronel" class="navbar-brand me-5" href="#top">
+      <img src="../../../../../assets/DC-OSCURO.webp" class="size-img" alt="Logo de la pagina">
     </a>
 
     <!-- BOTÓN HAMBURGUESA (Menú colapsable) -->
@@ -26,28 +26,38 @@
           <a class="nav-link" (click)="scrollToSection('projects')">Proyectos</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'about' }">
-          <a class="nav-link" (click)="scrollToSection('about')">Pablo</a>
+          <a class="nav-link" (click)="scrollToSection('about')">Daniel</a>
         </li>
         <li class="nav-item" [ngClass]="{ 'active': currentSection === 'contact' }">
           <a class="nav-link" (click)="scrollToSection('contact')">Contacto</a>
         </li>
 
-        <!-- Botón de cambio de tema -->
-        <li class="nav-item">
-          <a class="nav-link" (click)="toggleTheme()">
-            <i *ngIf="isDarkTheme" class="bi bi-moon-fill icono"></i>
-            <i *ngIf="!isDarkTheme" class="bi bi-brightness-high-fill icono"></i>
-          </a>
-        </li>
+            <!-- Social - Cambio de Tema -->
+        <div class="d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/daniel-ar%C3%ADstides-coronel-gonz%C3%A1lez-9a8082255/" target="_blank">
+              <img src="../../../../../assets/icons/icons8-linkedin.svg" class="svg-size" alt="Linkedin">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/DanielCoronelPV" target="_blank">
+              <img src="../../../../../assets/icons/icons8-github.svg" class="svg-size" alt="github">
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" (click)="toggleTheme()">
+             <i *ngIf="isDarkTheme" class="bi bi-moon-fill icono"></i>
+              <i *ngIf="!isDarkTheme" class="bi bi-brightness-high-fill icono"></i>
+            </a>
+          </li> -->
+        </div>
       </ul>
     </div>
   </div>
-
-
 </nav>
 
   <!-- Blur progresivo debajo del navbar -->
-  <div class="progressive-blur-container">
+  <div class="progressive-blur-containegr">
     <div class="blur-filter"></div>
     <div class="blur-filter"></div>
     <div class="blur-filter"></div>

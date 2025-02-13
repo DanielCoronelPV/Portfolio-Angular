@@ -1,8 +1,8 @@
   /*
   SCSS de: Componente Profile
 
-  @Autor: Pablo López Luján
-          github.com/pablolop12
+  @Autor: Daniel Coronel
+          github.com/DanielCoronelPV
   */
 
 
@@ -11,25 +11,88 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
-    
     transition: all 0.2s ease; /* Para transiciones suaves */
   }
 
 
+    /* Titulo texto */
+  .buttonD {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+
+  /* button styling */
+  .buttonD {
+    --animation-color: #e1a831;
+    --fs-size: 2em;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+
   /* Titulo texto */
-  .nombre-animado {
-    font-family: Frygia-Heavy;
-    color: var(--tAnimado1);
+  .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    font-size: 2em;
     font-weight: 900;
-    font-size: 85px;
-    margin: none;
-    animation-delay: 0.4s;
-    animation: fadeInUp 0.2s ease-out; /* Aplica la animación al cargar */ 
+    font-style: italic;
+  }
+
+  /* button styling */
+  .button {
+    --text-stroke-color: #e1a831;
+    --animation-color: #e1a831;
+    letter-spacing: 3px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  .space-p {
+    color: #D9E5D6;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .text-format {
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
 
   /* Texto secundario (Color primario) */
   .text-semi {
-    color: var(--text1);
+    color: #D9E5D6;
   }
 
 
@@ -52,12 +115,12 @@
     font-size: 16px;
     transition: 0.1s ease-in-out;
 
-    animation: fadeInUp 0.8s ease-out; /* Aplica la animación al cargar */ 
+    animation: fadeInUp 0.8s ease-out; /* Aplica la animación al cargar */
   }
 
-  .linkHolder:hover {
-    background-color: var(--bBgHover);
-  }
+  // .linkHolder:hover {
+  //   background-color: #14A76C;
+  // }
 
   .linkHolder:active {
     transform: scale(0.95);
@@ -72,7 +135,7 @@
     font-weight: 500;
     font-size: 25px;
     margin: none;
-    animation: fadeInUp 0.6s ease-out; /* Aplica la animación al cargar */ 
+    animation: fadeInUp 0.6s ease-out; /* Aplica la animación al cargar */
   }
 
   /* Alert Disponibilidad */
@@ -85,7 +148,7 @@
     padding-inline: 10px;
     border-radius: 4px;
     transition: transform 0.2s ease-in-out;
-    animation: fadeInUp 1s ease-out; /* Aplica la animación al cargar */ 
+    animation: fadeInUp 1s ease-out; /* Aplica la animación al cargar */
   }
 
   .disponibilidad:hover {
@@ -105,11 +168,15 @@
   /* Animación para incentivar el Scroll */
   .scrollIncent {
     position: absolute;
-    bottom: -50%;
+    bottom: -30%;
+    @media (min-width: 768px) {
+      bottom: -50%;
+    }
     left: 50%;
     transform: translate(-50%, -0%);
     color: var(--text1);
     z-index: 10;
+    cursor: pointer;
   }
 
   .scrollIncent span {
@@ -134,7 +201,7 @@
 
 
 
-  /* ANIMACIONES:  
+  /* ANIMACIONES:
 
   - Disponibilidad (pulse)
   - Incentivar Scroll (bounce)

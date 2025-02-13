@@ -19,7 +19,7 @@ export class ContactComponent implements AfterViewInit {
       });
 
       copyEmailBtn.addEventListener('click', () => {
-        const email = 'pablolopezlujan01@gmail.com';
+        const email = 'danicoronel201070@gmail.com';
         navigator.clipboard.writeText(email).then(() => {
           // Muestra el tooltip al hacer clic
           tooltip.show();

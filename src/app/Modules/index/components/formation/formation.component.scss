@@ -1,19 +1,129 @@
   /*
   SCSS de: Componente Formation
-  @Autor: Pablo López Luján
-          github.com/pablolop12
+  @Autor: Daniel Coronel
+          github.com/DanielCoronelPV
   */
 
   /* Contenedor del componente */
+
+  /*
+  SCSS de: Componente Exp-Progress
+  @Autor: Daniel Coronel
+          github.com/DanielCoronelPV
+  */
+
+  /* Contenedor base del componente */
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    list-style-type: none;
+  }
+
+  p.color {
+    color: #D9E5D6 !important;
+  }
+
+  .title {
+    color: #D9E5D6;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  /* Estructura de un item del timeline */
+  .timeline-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+
+  /* Estilo para Marcadores (Bolas) Del timeline */
+  .timeline-marker {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    flex-shrink: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--text1);
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+
+  /* Estilo de la linea vertical del timeline */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25px;
+    /* Ajusta la posición de la línea central */
+    bottom: 0;
+    width: 1.5px;
+    background: linear-gradient(180deg, var(--tl1) 0%, var(--tl2) 4%, var(--tl2) 96%, var(--tl1) 100%);
+    z-index: -1;
+  }
+
+  /* Elementos referidos al texto de cada bloque del timeline */
+  .timeline-details {
+    position: relative;
+    flex: 1;
+    margin-right: 20px;
+    color: #D9E5D6 !important;
+  }
+
+  .timeline-description {
+    flex: 2;
+  }
+
+  .company {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .role {
+    font-size: 22px;
+    color: #e1a831 !important;
+    font-weight: 500;
+  }
+
+  .date {
+    color: var(--date);
+  }
+
+
+  .highlight {
+    color: #e1a831 !important;
+    font-weight: 600;
+  }
+
+  .external {
+    font-size: 16px;
+    margin-left: 4px;
+    color: var(--external);
+  }
+
   .container-formation {
     padding: 10px;
+  }
+
+  .title {
+    color: #D9E5D6;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
   }
 
   /* Estilo para las cajas de educacion institucional */
   .formationBox {
     margin-bottom: 10px;
-    background-color: var(--formationBox);
-    border-radius: 5px;
+    // background-color: var(--formationBox);
+    border-radius: 8px;
   }
 
   /* Estructura de las cajas */
@@ -29,6 +139,13 @@
     justify-content: center;
     padding: 10px;
     flex: 0 0 auto;
+    height: 85px !important;
+    width: 95px !important;
+    margin-bottom: 8px;
+  }
+
+  .block-div {
+    display: flex;
   }
 
   /* Estilo para los elementos de cada educación */
@@ -44,7 +161,6 @@
 
   .text h2 {
     font-size: 20px;
-    color: var(--accent);
   }
 
   .text h3 {
@@ -83,29 +199,16 @@
   .svgV {
     width: 80px;
     height: 80px;
+    margin-left: 7px !important;
     margin-inline-end: 10px;
     background-color: var(--text1);
-    -webkit-mask-image: url("../../../../../assets/vedruna_logo.svg");
-    mask-image: url("../../../../../assets/vedruna_logo.svg");
+    // -webkit-mask-image: url("../../../../../assets/UNE.webp");
+    // mask-image: url("../../../../../assets/UNE.webp");
     mask-size: contain;
     mask-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-
-  }
-
-  /* SVG Altair Logo */
-  .svgA {
-    width: 80px;
-    height: 80px;
-    margin-inline-end: 10px;
-    background-color: var(--text1);
-    -webkit-mask-image: url("../../../../../assets/altair_logo.svg");
-    mask-image: url("../../../../../assets/altair_logo.svg");
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    border-radius: 20% !important;
   }
 
   /* Icono/Caja de Educacion adicional */

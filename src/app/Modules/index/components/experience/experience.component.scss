@@ -1,7 +1,7 @@
   /*
   SCSS de: Componente Experiencia
-  @Autor: Pablo López Luján
-          github.com/pablolop12
+  @Autor: Daniel Coronel
+          github.com/DanielCoronelPV
   */
 
   /* Contenedor base del componente */
@@ -14,7 +14,7 @@
 
   /* Estilos Rectangulo de experiencia Escolar */
   .baseExperience {
-    background: linear-gradient(121deg, var(--background2) 0%, var(--baseExp) 100%);
+    background: linear-gradient(121deg, #537988 -40%, #071013 100%);
     backdrop-filter: blur(4px);
     border-radius: 8px;
     padding: 20px;
@@ -31,7 +31,16 @@
   /* Estilos de texto */
   h1 {
     font-weight: 800;
-    color: var(--text1);
+  }
+
+  .title {
+    color: #D9E5D6;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic;
+    @media (min-width: 991px) {
+      margin-top: 42px;
+    }
   }
 
   p {
@@ -43,11 +52,12 @@
   }
 
   span {
-    color: var(--accent);
+    color: #e1a831;
     font-weight: 600;
   }
 
   .custom-paragraph {
+    color: #D9E5D6 !important;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.5;
@@ -64,4 +74,11 @@
     padding-inline: 12px;
     border: solid 1px var(--badgeB);
 
+  }
+
+  @media (min-width: 991px) {
+    .head-lg {
+      display: flex;
+      justify-content: center;
+    }
   }
