@@ -6,7 +6,7 @@ Este es mi portfolio personal, creado con Angular para mostrar mis habilidades y
 ## Vista previa
 Estas imágenes pueden estar sujetas a cambio, la apariencia de la web puede no ser idéntica actualmente.
 
-Visita la web completa para ver todo el contenido a detalle: https://danielcoronel.es
+Visita la web completa para ver todo el contenido a detalle: https://danielcoronel.netlify.app/
 
 
 ## Stack tecnológico

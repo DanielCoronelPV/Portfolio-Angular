@@ -13,6 +13,9 @@
 .avatar {
     margin-left: 10px;
     position: relative;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
     margin-top: 70px;
     max-height: 120px;
     border-radius: 50%;
