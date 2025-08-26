@@ -47,6 +47,9 @@ You can view the live version of this portfolio here:
 
 ---
 
+## 📸 Preview
+Portfolio-Screenshot
+
 ## 🚀 How to run this project
 ```bash
 # Clone the repository
