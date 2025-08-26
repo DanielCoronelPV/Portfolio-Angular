@@ -48,6 +48,7 @@ You can view the live version of this portfolio here:
 ---
 
 ## 📁 Structure
+```bash
 /portfolio
 │
 ├── src
@@ -86,11 +87,11 @@ You can view the live version of this portfolio here:
 ├── tsconfig.app.json
 ├── tsconfig.json
 └── README.md
+```
 
 ---
 
 ## 🚀 How to run this project
-```bash
 # Clone the repository
 git clone https://github.com/DanielCoronelPV/portfolio-angular.git
 
