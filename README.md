@@ -64,7 +64,8 @@ npm install
 # Run the development server
 ng serve -o
 
-📁 Structure
+```bash
+## 📁 Structure
 /portfolio
 │
 ├── index.html        # Main HTML file
