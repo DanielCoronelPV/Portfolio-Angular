@@ -9,8 +9,6 @@ A modern personal portfolio website built with Angular to showcase my skills, pr
 I'm **Daniel Coronel**, a web developer from Paraguay 🇵🇾 passionate about building modern, responsive, and interactive web applications.  
 I specialize in **JavaScript, TypeScript, Angular, HTML, CSS, and Blazor**, and I enjoy turning ideas into functional and aesthetic digital products.  
 
-You can visit the live portfolio here 👉 [danielcoronel.netlify.app](https://danielcoronel.netlify.app/)  
-
 ---
 
 ## 📌 Description
@@ -43,24 +41,13 @@ It’s intended for recruiters, collaborators, and anyone interested in my profe
 
 ---
 
-## 🚀 How to run this project
-```bash
-# Clone the repository
-git clone https://github.com/DanielCoronelPV/portfolio-angular.git
+## 🌐 Live Demo
+You can view the live version of this portfolio here:
+👉 [danielcoronel.netlify.app/](https://danielcoronel.netlify.app/)
 
-# Navigate into the project folder
-cd portfolio-angular
+---
 
-# Install dependencies
-npm install
-
-# Run the development server
-ng serve -o
-
-# The app will be available at
-http://localhost:4200/
-
-📁 Structure
+## 📁 Structure
 /portfolio
 │
 ├── src
@@ -99,3 +86,22 @@ http://localhost:4200/
 ├── tsconfig.app.json
 ├── tsconfig.json
 └── README.md
+
+---
+
+## 🚀 How to run this project
+```bash
+# Clone the repository
+git clone https://github.com/DanielCoronelPV/portfolio-angular.git
+
+# Navigate into the project folder
+cd portfolio-angular
+
+# Install dependencies
+npm install
+
+# Run the development server
+ng serve -o
+
+# The app will be available at
+http://localhost:4200/
