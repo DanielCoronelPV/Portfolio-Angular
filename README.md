@@ -48,7 +48,9 @@ You can view the live version of this portfolio here:
 ---
 
 ## 📸 Preview
-Portfolio-Screenshot
+![Portfolio Screenshot](assets/Portfolio-screenshot.png)
+
+---
 
 ## 🚀 How to run this project
 ```bash
