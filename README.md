@@ -43,13 +43,6 @@ It’s intended for recruiters, collaborators, and anyone interested in my profe
 
 ---
 
-## 📂 Project structure
-The project is organized in a single Angular module from which all components branch out.  
-Content is divided into **sections (components)**, which may contain nested subcomponents.  
-Additional resources such as fonts and images are stored in the **Assets** folder.  
-
----
-
 ## 🚀 How to run this project
 ```bash
 # Clone the repository
@@ -64,11 +57,45 @@ npm install
 # Run the development server
 ng serve -o
 
-```bash
-## 📁 Structure
+# The app will be available at
+http://localhost:4200/
+
+📁 Structure
 /portfolio
 │
-├── index.html        # Main HTML file
-├── styles.css        # Basic styles
-├── script.js         # Optional JS (if needed)
-└── assets/           # Images and other static files
+├── src
+│   ├── app
+│   │   ├── Modules
+│   │   │   └── index
+│   │   │       ├── components
+│   │   │       │   ├── about
+│   │   │       │   ├── carousel
+│   │   │       │   ├── contact
+│   │   │       │   ├── exp-progress
+│   │   │       │   ├── experience
+│   │   │       │   ├── footer
+│   │   │       │   ├── formation
+│   │   │       │   ├── gitprev
+│   │   │       │   ├── index
+│   │   │       │   ├── navbar
+│   │   │       │   ├── polygon-skills
+│   │   │       │   ├── profile
+│   │   │       │   └── projects
+│   │   │       └── index.module.ts
+│   │   ├── services
+│   │   │   ├── gitprev.service.ts
+│   │   │   └── theme.service.ts
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
+│   ├── assets
+│   ├── index.html
+│   └── main.ts
+│
+├── angular.json
+├── package.json
+├── tsconfig.app.json
+├── tsconfig.json
+└── README.md
