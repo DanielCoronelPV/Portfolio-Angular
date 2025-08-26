@@ -48,7 +48,7 @@ You can view the live version of this portfolio here:
 ---
 
 ## 📸 Preview
-![Portfolio Screenshot](assets/Portfolio-screenshot.png)
+![Portfolio Screenshot](src/assets/Portfolio-screenshot.png)
 
 ---
 
