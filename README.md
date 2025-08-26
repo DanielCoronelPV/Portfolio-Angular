@@ -7,7 +7,7 @@ A modern personal portfolio website built with Angular to showcase my skills, pr
 
 ## 📄 About Me
 I'm **Daniel Coronel**, a web developer from Paraguay 🇵🇾 passionate about building modern, responsive, and interactive web applications.  
-I specialize in **JavaScript, TypeScript, Angular, HTML, CSS, and Blazor**, and I enjoy turning ideas into functional and aesthetic digital products.  
+I specialize in **JavaScript, TypeScript, Angular, HTML, and CSS**, and I enjoy turning ideas into functional and aesthetic digital products.  
 
 ---
 
