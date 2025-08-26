@@ -47,6 +47,26 @@ You can view the live version of this portfolio here:
 
 ---
 
+## 🚀 How to run this project
+```bash
+# Clone the repository
+git clone https://github.com/DanielCoronelPV/portfolio-angular.git
+
+# Navigate into the project folder
+cd portfolio-angular
+
+# Install dependencies
+npm install
+
+# Run the development server
+ng serve -o
+
+# The app will be available at
+http://localhost:4200/
+```
+
+---
+
 ## 📁 Structure
 ```bash
 /portfolio
@@ -88,21 +108,3 @@ You can view the live version of this portfolio here:
 ├── tsconfig.json
 └── README.md
 ```
-
----
-
-## 🚀 How to run this project
-# Clone the repository
-git clone https://github.com/DanielCoronelPV/portfolio-angular.git
-
-# Navigate into the project folder
-cd portfolio-angular
-
-# Install dependencies
-npm install
-
-# Run the development server
-ng serve -o
-
-# The app will be available at
-http://localhost:4200/
